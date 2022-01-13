@@ -3,7 +3,7 @@
 name: Deploy-Azure-Function
 
 env:
-  AZURE_FUNCTIONAPP_NAME: "h4iuzkcelegpmfuncapp"    # set this to your application's name
+  AZURE_FUNCTIONAPP_NAME: "func-arush-ipam"    # set this to your application's name
   AZURE_FUNCTIONAPP_PACKAGE_PATH: "./src/function/"  # set this to the path to your web app project, defaults to the repository root
   RESOURCEGROUPNAME: "rg-ipam"    # Set this variable for the Resource Group Name where to deploy the Azure Function. This needs to be the same RG as where the Storage Account was being deployed.
   SUBSCRIPTIONID: "2569a91a-7470-41af-bc1f-6481effc4db4"  # Set this variable to deploy the above Resource Group in a certain Subscription
