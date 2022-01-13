@@ -3,14 +3,14 @@
 name: Deploy-Azure-Function
 
 env:
-  AZURE_FUNCTIONAPP_NAME: "[enter the name for your Function App]"    # set this to your application's name
+  AZURE_FUNCTIONAPP_NAME: "h4iuzkcelegpmfuncapp"    # set this to your application's name
   AZURE_FUNCTIONAPP_PACKAGE_PATH: "./src/function/"  # set this to the path to your web app project, defaults to the repository root
-  RESOURCEGROUPNAME: "[Enter a Resource Group Name]"    # Set this variable for the Resource Group Name where to deploy the Azure Function. This needs to be the same RG as where the Storage Account was being deployed.
-  SUBSCRIPTIONID: "[Enter a Subscription ID]"  # Set this variable to deploy the above Resource Group in a certain Subscription
-  STORAGEACCOUNTNAME: "[Enter the name of Storage Account from the deploy-storage-account Github Action Workflow output]"
-  REGION: "westeurope" # Set this variable to have the Resource Group and Storage Account deployed in a certain location
+  RESOURCEGROUPNAME: "rg-ipam-funcapp"    # Set this variable for the Resource Group Name where to deploy the Azure Function. This needs to be the same RG as where the Storage Account was being deployed.
+  SUBSCRIPTIONID: "2569a91a-7470-41af-bc1f-6481effc4db4"  # Set this variable to deploy the above Resource Group in a certain Subscription
+  STORAGEACCOUNTNAME: "h4iuzkcelegpmstorage"
+  REGION: "uksouth" # Set this variable to have the Resource Group and Storage Account deployed in a certain location
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
